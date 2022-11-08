@@ -1,0 +1,201 @@
+<html>
+<head>
+<title>EncounterDangers Database</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!--Persistent Page Header-->
+<div>
+    <h1>QuestLog</h1>
+    <h3>Table Top Role Playing Game Database</h3>
+    [ <a href="index.html">Homepage</a> | <a href="players.html">Players</a> | <a href="heroes.html">Heros</a> | <a href="dangers.html">Dangers</a> | <a href="encounters.html">Encounters</a> | <a href="accomplishments.html">Accomplishments</a> | <a href="encounterdangers.html">EncounterDangers</a> ]
+</div>
+
+<!-- accomplishments table -->
+<h2>EncounterDangers</h2>
+
+<!-- table filters -->
+<form>
+    <select>
+        <option>-Filter By Encounter-</option>
+        <option>Battle Atop Mt. Aynor</option>
+        <option>Milkreach Keep Infiltration</option>
+        <option>Traversal of the Jungle Dregs</option>
+        <option>Toadwatch Sewer Escape</option>
+        <option>Direscar Grasslands Encounter 1</option>
+        <option>Ancient Gladian Ruins - Final Chamber</option>
+        <option>Ocean Pirate Encounter - WIP</option>
+    </select>
+    <input type='submit' class='filter' value='Filter'>
+</form>
+<form>
+    <select>
+        <option>-Filter By Danger-</option>
+        <option>Poisonous Hornet Swarm</option>
+        <option>Acid Tornado</option>
+        <option>Collapsing Ceiling</option>
+        <option>Traps Everywher</option>
+        <option>Ticking Time Bomb</option>
+        <option>Toxic Liquid Rising</option>
+        <option>Flame Geiser</option>
+        <option>Roving Slime Beasts</option>
+        <option>Spiked Walls Closing In</option>
+        <option>Camouflaged Jump-Scare Stalkers</option>
+        <option>Massive Lurching Machinery</option>
+        <option>Large War Party of Goblins</option>
+        <option>Sleeping Colossus</option>
+        <option>Enraged Basilisk</option>
+        <option>Dark Magic Poltergeists</option>
+    </select>
+    <input type='submit' class='filter' value='Filter'>
+</form>
+
+<!-- the table -->
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Encounter ID</th>
+        <th>Danger ID</th>
+        <th>Edit/Delete</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>14</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>2</td>
+        <td>11</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>3</td>
+        <td>10</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>4</td>
+        <td>10</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>4</td>
+        <td>6</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>5</td>
+        <td>2</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>5</td>
+        <td>1</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>5</td>
+        <td>12</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>6</td>
+        <td>5</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>6</td>
+        <td>13</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+</table>
+
+<!-- add new accomplishment to the database -->
+<form>
+    <h3>Add New EncounterDanger</h3>
+    <label>Select Encounter:</label>
+    <select>
+        <option>Battle Atop Mt. Aynor</option>
+        <option>Milkreach Keep Infiltration</option>
+        <option>Traversal of the Jungle Dregs</option>
+        <option>Toadwatch Sewer Escape</option>
+        <option>Direscar Grasslands Encounter 1</option>
+        <option>Ancient Gladian Ruins - Final Chamber</option>
+        <option>Ocean Pirate Encounter - WIP</option>
+    </select><br>
+    <label>Select Danger:</label>
+    <select>
+        <option>Poisonous Hornet Swarm</option>
+        <option>Acid Tornado</option>
+        <option>Collapsing Ceiling</option>
+        <option>Traps Everywher</option>
+        <option>Ticking Time Bomb</option>
+        <option>Toxic Liquid Rising</option>
+        <option>Flame Geiser</option>
+        <option>Roving Slime Beasts</option>
+        <option>Spiked Walls Closing In</option>
+        <option>Camouflaged Jump-Scare Stalkers</option>
+        <option>Massive Lurching Machinery</option>
+        <option>Large War Party of Goblins</option>
+        <option>Sleeping Colossus</option>
+        <option>Enraged Basilisk</option>
+        <option>Dark Magic Poltergeists</option>
+    </select><br>
+    <input type='submit' class='AddNew' value='Add'>
+</form>
+
+<br>
+<br>
+
+<p>&copy Nate Bedocs and  Matt Chalabian 2022</p>
+</html>
+<!--CS 290 and CS 340 example code used as reference along with w3schools.com for reference material-->

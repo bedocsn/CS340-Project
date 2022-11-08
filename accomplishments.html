@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>Accomplishments Database</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!--Persistent Page Header-->
+<div>
+    <h1>QuestLog</h1>
+    <h3>Table Top Role Playing Game Database</h3>
+    [ <a href="index.html">Homepage</a> | <a href="players.html">Players</a> | <a href="heroes.html">Heros</a> | <a href="dangers.html">Dangers</a> | <a href="encounters.html">Encounters</a> | <a href="accomplishments.html">Accomplishments</a> | <a href="encounterdangers.html">EncounterDangers</a> ]
+</div>
+
+<!-- accomplishments table -->
+<h2>Accomplishments</h2>
+
+<!-- table filters -->
+<form>
+    <select>
+        <option>-Filter By Hero-</option>
+        <option>Golrog</option>
+        <option>Isabella</option>
+        <option>Nix</option>
+    </select>
+    <input type='submit' class='filter' value='Filter'>
+</form>
+<form>
+    <select>
+        <option>-Filter By Encounter-</option>
+        <option>Milkreach Keep Infiltration</option>
+        <option>Toadwatch Sewer Escape</option>
+        <option>Direscar Grasslands Encounter 1</option>
+        <option>Ancient Gladian Ruins - Final Chamber</option>
+    </select>
+    <input type='submit' class='filter' value='Filter'>
+</form>
+
+<!-- the table -->
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Hero ID</th>
+        <th>Encounter ID</th>
+        <th>Date Completed</th>
+        <th>Edit/Delete</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>4</td>
+        <td>2022-07-05</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>1</td>
+        <td>5</td>
+        <td>2022-06-14</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>2</td>
+        <td>5</td>
+        <td>2022-06-14</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2022-06-21</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>2</td>
+        <td>6</td>
+        <td>2022-05-21</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>3</td>
+        <td>6</td>
+        <td>2022-05-20</td>
+        <td>
+            <input type='button' class='Edit' value='Edit'>
+            <input type='button' class='Delete' value="Delete" >
+        </td>
+    </tr>
+</table>
+
+<!-- add new accomplishment to the database -->
+<form>
+    <h3>Add New Accomplishment</h3>
+    <label>Select Hero:</label>
+    <select>
+        <option>Golrog</option>
+        <option>Isabella</option>
+        <option>Nix</option>
+        <option>Telthos</option>
+    </select><br>
+    <label>Select Encounter:</label>
+    <select>
+        <option>Battle Atop Mt. Aynor</option>
+        <option>Milkreach Keep Infiltration</option>
+        <option>Traversal of the Jungle Dregs</option>
+        <option>Toadwatch Sewer Escape</option>
+        <option>Direscar Grasslands Encounter 1</option>
+        <option>Ancient Gladian Ruins - Final Chamber</option>
+        <option>Ocean Pirate Encounter - WIP</option>
+    </select><br>
+    <label>Date:</label>
+    <input type="date"><br>
+    <input type='submit' class='AddNew' value='Add'>
+</form>
+
+<br>
+<br>
+
+<p>&copy Nate Bedocs and  Matt Chalabian 2022</p>
+</html>
+<!--CS 290 and CS 340 example code used as reference along with w3schools.com for reference material-->

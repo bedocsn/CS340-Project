@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Heroes Database</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!--Persistent Page Header-->
+<div>
+    <h1>QuestLog</h1>
+    <h3>Table Top Role Playing Game Database</h3>
+    [ <a href="index.html">Homepage</a> | <a href="players.html">Players</a> | <a href="heroes.html">Heros</a> | <a href="dangers.html">Dangers</a> | <a href="encounters.html">Encounters</a> | <a href="accomplishments.html">Accomplishments</a> | <a href="encounterdangers.html">EncounterDangers</a> ]
+</div>
+
+<!-- heros table -->
+<h2>Heroes</h2>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Hero Name</th>
+        <th>Player ID</th>
+        <th>Notes</th>
+        <th>Edit/Delete</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Golrog</td>
+        <td>2</td>
+        <td>A headstrong dwarf. Has a large blunt battle axe. Disagreeable, but loyal to friends.</td>
+        <td>
+            <input type='button' class='Edit' value="Edit">
+            <input type='button' class='Delete' value="Delete">
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Isabella</td>
+        <td>1</td>
+        <td>An aloof, mysterious elf. Specializes in sneaking around and can caste obscuring spells and other forms of spying-style magic. The brains of the squad.</td>
+        <td>
+            <input type='button' class='Edit' value="Edit">
+            <input type='button' class='Delete' value="Delete">
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Nix</td>
+        <td>3</td>
+        <td>A fun, mischievous halfling. Nix is the most outward and charismatic of the group, unable to   shy away from a social encounter. Sometimes this helps the group, and other times it gets them into sticky situations.</td>
+        <td>
+            <input type='button' class='Edit' value="Edit">
+            <input type='button' class='Delete' value="Delete">
+        </td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Telthos</td>
+        <td>NULL</td>
+        <td>Telthos is a battle-hardened human. He left his country and command post after refusing to fight in a war he disagreed with, and is now pursued by those he once fought for. He finds new meaning fighting for his new group of friends.</td>
+        <td>
+            <input type='button' class='Edit' value="Edit">
+            <input type='button' class='Delete' value="Delete">
+        </td>
+    </tr>
+</table>
+
+<!-- add a hero to the database -->
+<form>
+    <h3>Add New Hero</h3>
+    <label for="heroName">Hero Name (must be unique!):</label>
+    <input type="text" id="playerName" name="playerName"><br>
+    <label for="playerID">Select Player:</label>
+    <select>
+        <option>NULL</option>
+        <option>Alex G</option>
+        <option>Shelby M</option>
+        <option>Emma Q</option>
+        <option>Zain K</option>
+    </select><br>
+    <label for="notebook">Notebook:</label><br>
+    <textarea name="notebook" id="" cols="50" rows="10"></textarea><br>
+    <input type='submit' class='AddNew' value="Add">
+</form>
+<br>
+
+<!-- update existing hero in the database -->
+<form>
+    <h3>Update Hero</h3>
+    <label>Select Hero:</label>
+    <select>
+        <option>Golrog</option>
+        <option>Isabella</option>
+        <option>Nix</option>
+        <option>Telthos</option>
+    </select><br>
+
+    <label>Hero Name (must be unique!):</label>
+    <input type="text" name="heroName"><br>
+    <label>Player Name:</label>
+    <select>
+        <option>NULL</option>
+        <option>Alex G</option>
+        <option>Shelby M</option>
+        <option>Emma Q</option>
+        <option>Zain K</option>
+    </select><br>
+    <label for="notebook">Notebook:</label><br>
+    <textarea name="notebook" id="" cols="50" rows="10"></textarea><br>
+    <input type='submit' class='Update' value='Update'>
+</form>
+
+<br>
+<br>
+
+<p>&copy Nate Bedocs and  Matt Chalabian 2022</p>
+</html>
+<!--CS 290 and CS 340 example code used as reference along with w3schools.com for reference material-->
